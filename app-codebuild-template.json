@@ -6,6 +6,12 @@
             "Type": "String",
             "Default": "https://github.com/frosty-nomad/seis-616-assignment5.git"
         }
+        ,
+        "GitHubAccessToken": {
+            "Description": "GitHub personal access token for accessing the repository (NoEcho=true). Do NOT commit a real token into source control.",
+            "Type": "String",
+            "NoEcho": true
+        }
     },
     "Resources": {
         "ArtifactBucket": {
