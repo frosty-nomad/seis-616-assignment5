@@ -311,7 +311,7 @@
                 "DesiredCapacity": {"Ref": "asgsize"},
                 "LaunchTemplate": {
                     "LaunchTemplateId": {"Ref": "WebLaunchTemplate"},
-                    "Version": "$Latest"
+                    "Version": "1"
                 },
                 "MaxSize": {"Ref": "asgsize"},
                 "MinSize": {"Ref": "asgsize"},
@@ -380,13 +380,7 @@
                                 ]
                             ]
                         }
-                    },
-                    "NetworkInterfaces": [
-                        {
-                            "AssociatePublicIpAddress": true,
-                            "DeviceIndex": 0
-                        }
-                    ]
+                    }
                 }
             }
         },
