@@ -89,10 +89,7 @@
                 "Source": {
                     "Location": {"Ref": "projectUrl"},
                     "Type": "GITHUB",
-                    "ReportBuildStatus": "true"
-                },
-                "Triggers": {
-                    "Webhook": "true"
+                    "ReportBuildStatus": "false"
                 }
             }
         },
@@ -203,15 +200,6 @@
                },
                "Roles": [ { "Ref": "AppBuildRole" }]
             }
-        },
-        "GitHubSourceCredential": {
-            "Type": "AWS::CodeBuild::SourceCredential",
-            "Properties": {
-                "AuthType": "PERSONAL_ACCESS_TOKEN",
-                "ServerType": "GITHUB",
-                "Token": { "Ref": "GitHubAccessToken" }
-            }
         }
-
     }
 }
